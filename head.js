@@ -20,3 +20,4 @@ assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hi");
 assertEqual(head([]), "Hello");
 
+
