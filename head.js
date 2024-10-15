@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
 };
 
 const head = function(inArray) {
-  if (inArray.length === 0 || typeof inArray === "undefined") {
+  if (typeof inArray === "undefined" || inArray.length === 0) {
     return undefined;
   } else {
     return inArray[0];
