@@ -30,7 +30,11 @@ const without = function(source, itemsToRemove) {
   } else if (tmpArray.length > 0 && itemsToRemove.length > 0) {
     for (let x = 0; x < itemsToRemove.length; x++) {
       if (tmpArray.includes(itemsToRemove[x])) {
-        tmpArray = tmpArray.filter(e => e !== itemsToRemove[x]);
+        for (let i = 0; i < tmpArray.length; i++) {
+          if (tmpArray[i] === itemsToRemove[x]) {
+            tmpArray.splice(i, 1);
+          }
+        }
       }
     }
   }
