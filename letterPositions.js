@@ -21,17 +21,15 @@ const assertArraysEqual = function(array1, array2) {
 
 const letterPositions = function(inString) {
   let allLetters = {};
-  let lettersArr = [];
   if (inString === "") {
     return allLetters;
   } else {
-    lettersArr = inString.split('');
-    for (let i = 0; i < lettersArr.length; i++) {
-      if (lettersArr[i] !== " ") {
-        if (allLetters[lettersArr[i]]) {
-          allLetters[lettersArr[i]].push(i);
+    for (let i = 0; i < inString.length; i++) {
+      if (inString[i] !== " ") {
+        if (allLetters[inString[i]]) {
+          allLetters[inString[i]].push(i);
         } else {
-          allLetters[lettersArr[i]] = [i];
+          allLetters[inString[i]] = [i];
         }
       }
     }
