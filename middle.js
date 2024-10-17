@@ -26,7 +26,7 @@ const middle = function(inArray) {
   if (typeof tmpArray === "undefined" || tmpArray.length <= 2) {
     return outArray;
   } else {
-    if (tmpArray.length % 2 !== 0){
+    if (tmpArray.length % 2 !== 0) {
       index = Math.floor(tmpArray.length / 2);
       outArray[0] = tmpArray[index];
     } else {
