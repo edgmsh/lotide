@@ -20,7 +20,6 @@ const eqObjects = function(object1, object2) {
   let tmpObj1 = Object.keys(object1);
   let tmpObj2 = Object.keys(object2);
   if (!eqArrays(tmpObj1.sort(),tmpObj2.sort())) {
-    console.log("keys diff");
     return false;
   }
 
