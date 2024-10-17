@@ -1,6 +1,5 @@
 const eqArrays = function(array1, array2) {
-  array1.sort();
-  array2.sort();
+
   if (array1.length !== array2.length) {
     return false;
   } else {
@@ -18,8 +17,9 @@ const eqObjects = function(object1, object2) {
   if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   }
-
-  if (!eqArrays(Object.keys(object1),Object.keys(object2))) {
+  let tmpObj1 = Object.keys(object1);
+  let tmpObj2 = Object.keys(object2);
+  if (!eqArrays(tmpObj1.sort(),tmpObj2.sort())) {
     console.log("keys diff");
     return false;
   }
