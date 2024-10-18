@@ -39,3 +39,13 @@ const results2 = takeUntil(data2, x => x !== ',');
 assertArraysEqual(results1, [ 1, 2, 5, 7, 2 ]);
 assertArraysEqual(results2, [ "I've", 'been', 'to', 'Hollywood' ]);
 
+
+const findWaldo = function(names, found) {
+  names.forEach((element, index) => {
+    if (element === "Waldo") found(index);
+  });
+};
+
+findWaldo(["Alice", "Bob", "Waldo", "Winston"], index => console.log(`Found Waldo at index ${index}!`));
+
+
