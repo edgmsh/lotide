@@ -1,5 +1,4 @@
-const tail = require("../tail");
-const assertEqualArr = require("../tail");
+const { tail, assertEqualArr } = require("../tail");
 const assertEqual = require("../assertEqual");
 
 let result = tail(["Hello","Lighthouse","Labs"]);

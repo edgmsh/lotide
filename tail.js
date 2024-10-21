@@ -21,4 +21,4 @@ const tail = function(inArray) {
   }
 };
 
-module.exports = tail;
+module.exports = { tail, assertEqualArr };
