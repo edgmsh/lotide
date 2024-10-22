@@ -37,19 +37,4 @@ const letterPositions = function(inString) {
   return allLetters;
 };
 
-//console.log(letterPositions("Hello there"));
-/*
-  H: [ 0 ],
-  e: [ 1, 8, 10 ],
-  l: [ 2, 3 ],
-  o: [ 4 ],
-  t: [ 6 ],
-  h: [ 7 ],
-  r: [ 9 ]
-*/
-
-const result1 = letterPositions("Hello there");
-
-assertArraysEqual(result1["e"], [1, 8, 10]);
-assertArraysEqual(result1["r"], [9]);
-assertArraysEqual(result1["l"], [2, 3]);
+module.exports = letterPositions;
