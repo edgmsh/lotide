@@ -16,18 +16,19 @@ const flatten = require('./flatten');
 const reverse = require('./reverse');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  eqObjects: eqObjects,
-  countLetters: countLetters,
-  eqArrays: eqArrays,
-  findKey: findKey,
-  countOnly: countOnly,
-  findKeyByValue: findKeyByValue,
-  letterPositions: letterPositions,
-  without: without,
-  map: map,
-  flatten: flatten,
-  reverse: reverse
+  head,
+  tail,
+  middle,
+  eqObjects,
+  takeUntil,
+  countLetters,
+  eqArrays,
+  findKey,
+  countOnly,
+  findKeyByValue,
+  letterPositions,
+  without,
+  map,
+  flatten,
+  reverse
 };
