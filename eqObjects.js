@@ -1,16 +1,4 @@
-const eqArrays = function(array1, array2) {
-
-  if (array1.length !== array2.length) {
-    return false;
-  } else {
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] !== array2[i]) {
-        return false;
-      }
-    }
-    return true;
-  }
-};
+const eqArrays   = require('./eqArrays');
 
 const eqObjects = function(object1, object2) {
 
@@ -37,13 +25,4 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-console.log(eqObjects(shirtObject, anotherShirtObject)); // => true
-
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-console.log(eqObjects(shirtObject, longSleeveShirtObject)); // => false
-
-const sizeObj1 = { sizes: [1,2,6]};
-const sizeObj2 = { sizes: [1,2,5]};
-console.log(eqObjects(sizeObj1, sizeObj2));
+module.exports = eqObjects;
